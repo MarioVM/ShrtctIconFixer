@@ -1,6 +1,6 @@
 # IconFXR
 
-IconFXR is a Python script designed to check and fix broken icon paths in Windows shortcut files (.lnk) within the current directory. The script attempts to resolve broken icon paths by changing the drive letter to `W:` and, if still broken, to `F:` and if it STILL broken, tough luck.
+IconFXR is a Python script designed to check and fix broken icon paths in Windows shortcut files (.lnk) within the current directory. The script attempts to resolve broken icon paths by changing the drive letter to `W:` and, if still broken, to `F:`.
 
 ## Features
 
@@ -27,6 +27,7 @@ IconFXR is a Python script designed to check and fix broken icon paths in Window
    pip install pywin32 tqdm
 
 Usage
+Running the Python Script Directly
 Save the script:
 Save the script as iconfxr.py in the folder where you want to check the shortcuts.
 
@@ -36,6 +37,21 @@ Open a command prompt and navigate to the folder where you saved iconfxr.py. Run
 python iconfxr.py
 
 The script will process all .lnk files in the current directory, attempting to fix broken icon paths and logging the results.
+
+Running the PowerShell Script
+Run run_iconfxr.ps1 in the same folder as iconfxr.py:
+
+Logging
+All actions and outcomes are logged to a file named iconfxr.log in the current directory.
+
+License
+This project is licensed under the GNU General Public License v3.0. See the LICENSE file for details.
+
+Contributing
+Contributions are welcome! Please feel free to submit a pull request or open an issue on the GitHub repository.
+
+Acknowledgments
+This script uses the pywin32 package for handling Windows shortcuts and the tqdm package for displaying a progress bar.
 
 Logging
 All actions and outcomes are logged to a file named iconfxr.log in the current directory.
